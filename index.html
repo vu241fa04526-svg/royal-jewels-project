@@ -3,1154 +3,1677 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Royal Jewels</title>
-    <link rel="stylesheet" href="styles.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-<!-- OFFER BAR -->
-<div class="offer-bar">
-    ✨ Flat 20% Off on Wedding Jewellery | Free Shipping Above ₹10,000 ✨
-</div>
 
-<!-- HEADER -->
-<header>
-    <div class="logo">
-        <span>♕</span>
-        Royal Jewels
+
+<input type="checkbox" id="open-cart" class="state">
+<input type="checkbox" id="open-wish" class="state">
+
+<input type="checkbox" id="wish1" class="state">
+<input type="checkbox" id="wish2" class="state">
+<input type="checkbox" id="wish3" class="state">
+<input type="checkbox" id="wish4" class="state">
+<input type="checkbox" id="wish5" class="state">
+<input type="checkbox" id="wish6" class="state">
+<input type="checkbox" id="wish7" class="state">
+<input type="checkbox" id="wish8" class="state">
+<input type="checkbox" id="wish9" class="state">
+<input type="checkbox" id="wish10" class="state">
+
+<input type="checkbox" id="cart1" class="state">
+<input type="checkbox" id="cart2" class="state">
+<input type="checkbox" id="cart3" class="state">
+<input type="checkbox" id="cart4" class="state">
+<input type="checkbox" id="cart5" class="state">
+<input type="checkbox" id="cart6" class="state">
+<input type="checkbox" id="cart7" class="state">
+<input type="checkbox" id="cart8" class="state">
+<input type="checkbox" id="cart9" class="state">
+<input type="checkbox" id="cart10" class="state">
+
+
+<input type="checkbox" id="success" class="state">
+
+
+
+
+<div class="page">
+
+    <div class="announcement">
+        Complimentary shipping on orders above ₹25,000
     </div>
 
-    <div class="search-box">
-        <input type="text" id="searchInput" placeholder="Search jewellery...">
-        <button>🔍</button>
-    </div>
 
-    <div class="header-icons">
-        <button onclick="openWishlist()">♡ <span id="wishlistCount">0</span></button>
-        <button onclick="openCart()">🛒 <span id="cartCount">0</span></button>
-    </div>
-</header>
 
-<!-- NAVIGATION -->
-<nav>
-    <a href="#home">Home</a>
-    <a href="#categories">Collections</a>
-    <a href="#products">Jewellery</a>
-    <a href="#wedding">Wedding</a>
-    <a href="#offers">Offers</a>
-    <a href="#contact">Contact</a>
-</nav>
 
-<!-- HERO -->
-<section class="hero" id="home">
-    <div class="hero-content">
-        <p>TIMELESS ELEGANCE</p>
-        <h1>Jewellery That<br>Defines You</h1>
-        <span>Discover our exclusive collection of handcrafted jewellery.</span>
-        <br>
-        <a href="#products" class="hero-btn">SHOP NOW</a>
-    </div>
-</section>
+    <header>
 
-<!-- CATEGORIES -->
-<section class="section" id="categories">
+        <div class="nav">
 
-    <div class="section-title">
-        <p>EXPLORE</p>
-        <h2>Shop By Category</h2>
-    </div>
+            <a href="#" class="brand">
+                Royal <span>Jewels</span>
+            </a>
 
-    <div class="categories">
+            <nav class="nav-links">
 
-        <div class="category-card">
-            <img src="https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=600&q=80">
-            <h3>Gold Jewellery</h3>
-            <p>Elegant gold designs</p>
-            <a href="#products">Explore →</a>
+                <a href="#collections">Collections</a>
+                <a href="#shop">Shop</a>
+                <a href="#craft">Craftsmanship</a>
+                <a href="#bespoke">Bespoke</a>
+                <a href="#visit">Visit</a>
+
+            </nav>
+
+
+            <div class="nav-right">
+
+                <label for="open-wish" class="nav-icon">
+
+                    <svg viewBox="0 0 24 24">
+                        <path d="M20.8 8.6c0 5.5-8.8 10.7-8.8 10.7S3.2 14.1 3.2 8.6C3.2 5.7 5.3 4 7.8 4c1.7 0 3.2.9 4.2 2.2C13 4.9 14.5 4 16.2 4c2.5 0 4.6 1.7 4.6 4.6z"/>
+                    </svg>
+
+                </label>
+
+
+                <label for="open-cart" class="nav-icon">
+
+                    <svg viewBox="0 0 24 24">
+                        <path d="M6 7h12l1 13H5L6 7z"/>
+                        <path d="M9 7V5a3 3 0 0 1 6 0v2"/>
+                    </svg>
+
+                </label>
+
+            </div>
+
         </div>
 
-        <div class="category-card">
-            <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=600&q=80">
-            <h3>Diamond Jewellery</h3>
-            <p>Shine with brilliance</p>
-            <a href="#products">Explore →</a>
+    </header>
+
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <div class="hero-small">
+                Timeless Luxury
+            </div>
+
+            <h1>
+                Jewellery that becomes part of your story.
+            </h1>
+
+            <p>
+                Discover handcrafted gold and gemstone jewellery,
+                designed with elegance, precision and timeless beauty.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#shop" class="btn btn-gold">
+                    Explore Collection
+                </a>
+
+                <a href="#bespoke" class="btn btn-outline">
+                    Create Bespoke
+                </a>
+
+            </div>
+
         </div>
 
-        <div class="category-card">
-            <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=600&q=80">
-            <h3>Earrings</h3>
-            <p>Perfect for every occasion</p>
-            <a href="#products">Explore →</a>
+    </section>
+
+
+
+
+    <section class="promise">
+
+        <div class="promise-box">
+
+            <div class="promise-icon">✦</div>
+
+            <div>
+                <strong>Certified Jewellery</strong>
+                <br>
+                <small>Authenticity guaranteed</small>
+            </div>
+
         </div>
 
-        <div class="category-card">
-            <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=600&q=80">
-            <h3>Rings</h3>
-            <p>Make every moment special</p>
-            <a href="#products">Explore →</a>
+
+        <div class="promise-box">
+
+            <div class="promise-icon">◇</div>
+
+            <div>
+                <strong>Handcrafted</strong>
+                <br>
+                <small>Made by skilled artisans</small>
+            </div>
+
         </div>
 
-    </div>
-</section>
 
-<!-- WEDDING BANNER -->
-<section class="wedding" id="wedding">
+        <div class="promise-box">
 
-    <div>
-        <p>THE WEDDING COLLECTION</p>
-        <h2>Celebrate Your Forever</h2>
-        <span>Beautiful jewellery for your most beautiful moments.</span>
-        <br>
-        <a href="#products">EXPLORE COLLECTION</a>
-    </div>
+            <div class="promise-icon">♢</div>
 
-</section>
-
-<!-- PRODUCTS -->
-<section class="section products-section" id="products">
-
-    <div class="section-title">
-        <p>OUR COLLECTION</p>
-        <h2>Featured Jewellery</h2>
-    </div>
-
-    <div class="products" id="productContainer">
-
-        <!-- PRODUCT 1 -->
-        <div class="product-card" data-name="Royal Gold Necklace" data-category="necklace gold">
-            <div class="product-image">
-                <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=700&q=80">
-                <button class="heart" onclick="toggleWishlist(1)">♡</button>
+            <div>
+                <strong>Lifetime Care</strong>
+                <br>
+                <small>After-sale service</small>
             </div>
 
-            <div class="product-info">
-                <p class="category">GOLD NECKLACE</p>
-                <h3>Royal Gold Necklace</h3>
-                <p class="price">₹45,999</p>
-                <button class="cart-btn" onclick="addToCart(1)">ADD TO CART</button>
-            </div>
         </div>
 
-        <!-- PRODUCT 2 -->
-        <div class="product-card" data-name="Diamond Elegance Ring" data-category="ring diamond">
-            <div class="product-image">
-                <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=700&q=80">
-                <button class="heart" onclick="toggleWishlist(2)">♡</button>
+    </section>
+
+
+    <section class="section collections" id="collections">
+
+        <div class="section-title">
+
+            <div class="kicker">
+                Explore
             </div>
 
-            <div class="product-info">
-                <p class="category">DIAMOND RING</p>
-                <h3>Diamond Elegance Ring</h3>
-                <p class="price">₹28,999</p>
-                <button class="cart-btn" onclick="addToCart(2)">ADD TO CART</button>
-            </div>
+            <h2>
+                Signature Collections
+            </h2>
+
         </div>
 
-        <!-- PRODUCT 3 -->
-        <div class="product-card" data-name="Pearl Drop Earrings" data-category="earrings pearl">
-            <div class="product-image">
-                <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=700&q=80">
-                <button class="heart" onclick="toggleWishlist(3)">♡</button>
-            </div>
 
-            <div class="product-info">
-                <p class="category">EARRINGS</p>
-                <h3>Pearl Drop Earrings</h3>
-                <p class="price">₹12,999</p>
-                <button class="cart-btn" onclick="addToCart(3)">ADD TO CART</button>
-            </div>
-        </div>
+        <div class="collection-grid">
 
-        <!-- PRODUCT 4 -->
-        <div class="product-card" data-name="Bridal Gold Bangles" data-category="bangles gold bridal">
-            <div class="product-image">
-                <img src="https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=700&q=80">
-                <button class="heart" onclick="toggleWishlist(4)">♡</button>
-            </div>
 
-            <div class="product-info">
-                <p class="category">GOLD BANGLES</p>
-                <h3>Bridal Gold Bangles</h3>
-                <p class="price">₹38,500</p>
-                <button class="cart-btn" onclick="addToCart(4)">ADD TO CART</button>
-            </div>
-        </div>
+            <div class="collection-card">
 
-        <!-- PRODUCT 5 -->
-        <div class="product-card" data-name="Classic Diamond Necklace" data-category="necklace diamond">
-            <div class="product-image">
-                <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=700&q=80">
-                <button class="heart" onclick="toggleWishlist(5)">♡</button>
-            </div>
+                <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=900&q=85">
 
-            <div class="product-info">
-                <p class="category">DIAMOND NECKLACE</p>
-                <h3>Classic Diamond Necklace</h3>
-                <p class="price">₹72,999</p>
-                <button class="cart-btn" onclick="addToCart(5)">ADD TO CART</button>
-            </div>
-        </div>
+                <div class="collection-content">
 
-        <!-- PRODUCT 6 -->
-        <div class="product-card" data-name="Golden Charm Bracelet" data-category="bracelet gold">
-            <div class="product-image">
-                <img src="https://images.unsplash.com/photo-1619119069152-a2b331eb392a?auto=format&fit=crop&w=700&q=80">
-                <button class="heart" onclick="toggleWishlist(6)">♡</button>
-            </div>
-
-            <div class="product-info">
-                <p class="category">GOLD BRACELET</p>
-                <h3>Golden Charm Bracelet</h3>
-                <p class="price">₹19,999</p>
-                <button class="cart-btn" onclick="addToCart(6)">ADD TO CART</button>
-            </div>
-        </div>
-
-        <!-- PRODUCT 7 -->
-        <div class="product-card" data-name="Royal Bridal Set" data-category="bridal necklace">
-            <div class="product-image">
-                <img src="https://images.unsplash.com/photo-1602173574767-37ac01994b2a?auto=format&fit=crop&w=700&q=80">
-                <button class="heart" onclick="toggleWishlist(7)">♡</button>
-            </div>
-
-            <div class="product-info">
-                <p class="category">BRIDAL SET</p>
-                <h3>Royal Bridal Set</h3>
-                <p class="price">₹89,999</p>
-                <button class="cart-btn" onclick="addToCart(7)">ADD TO CART</button>
-            </div>
-        </div>
-
-        <!-- PRODUCT 8 -->
-        <div class="product-card" data-name="Elegant Gold Ring" data-category="ring gold">
-            <div class="product-image">
-                <img src="https://images.unsplash.com/photo-1588444650733-df5e2d7b2e5a?auto=format&fit=crop&w=700&q=80">
-                <button class="heart" onclick="toggleWishlist(8)">♡</button>
-            </div>
-
-            <div class="product-info">
-                <p class="category">GOLD RING</p>
-                <h3>Elegant Gold Ring</h3>
-                <p class="price">₹16,999</p>
-                <button class="cart-btn" onclick="addToCart(8)">ADD TO CART</button>
-            </div>
-        </div>
-
-    </div>
-
-    <p id="noProducts">No jewellery found.</p>
-
-</section>
-
-<!-- OFFER -->
-<section class="offer-section" id="offers">
-    <div>
-        <p>LIMITED TIME OFFER</p>
-        <h2>Make Every Moment Shine ✨</h2>
-        <span>Get special offers on selected jewellery collections.</span>
-    </div>
-</section>
-
-<!-- WISHLIST PANEL -->
-<div class="side-panel" id="wishlistPanel">
-
-    <div class="panel-header">
-        <h2>♡ My Wishlist</h2>
-        <button onclick="closeWishlist()">×</button>
-    </div>
-
-    <div id="wishlistItems" class="panel-items">
-        <p class="empty">Your wishlist is empty.</p>
-    </div>
-
-</div>
-
-<!-- CART PANEL -->
-<div class="side-panel" id="cartPanel">
-
-    <div class="panel-header">
-        <h2>🛒 My Cart</h2>
-        <button onclick="closeCart()">×</button>
-    </div>
-
-    <div id="cartItems" class="panel-items">
-        <p class="empty">Your cart is empty.</p>
-    </div>
-
-    <div class="cart-bottom">
-        <div class="total">
-            <span>Total</span>
-            <strong id="cartTotal">₹0</strong>
-        </div>
-
-        <button class="checkout-btn" onclick="checkout()">CHECKOUT</button>
-    </div>
-
-</div>
-
-<!-- OVERLAY -->
-<div id="overlay" onclick="closePanels()"></div>
-
-<!-- FOOTER -->
-<footer id="contact">
-
-    <div class="footer-content">
-
-        <div>
-            <h2>♕ Royal Jewels</h2>
-            <p>Timeless jewellery crafted for timeless moments.</p>
-        </div>
-
-        <div>
-            <h3>Quick Links</h3>
-            <a href="#home">Home</a>
-            <a href="#products">Jewellery</a>
-            <a href="#wedding">Wedding</a>
-            <a href="#offers">Offers</a>
-        </div>
-
-        <div>
-            <h3>Contact</h3>
-            <p>📞 +91 98765 43210</p>
-            <p>✉️ royaljewels@gmail.com</p>
-            <p>📍 Vijayawada, Andhra Pradesh</p>
-        </div>
-
-    </div>
-
-    <div class="copyright">
-        © 2026 Royal Jewels. All Rights Reserved.
-    </div>
-
-</footer>
-
-<script>
-
-const products = {
-
-    1: {
-        name: "Royal Gold Necklace",
-        price: 45999,
-        image: "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=700&q=80"
-    },
-
-    2: {
-        name: "Diamond Elegance Ring",
-        price: 28999,
-        image: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=700&q=80"
-    },
-
-    3: {
-        name: "Pearl Drop Earrings",
-        price: 12999,
-        image: "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=700&q=80"
-    },
-
-    4: {
-        name: "Bridal Gold Bangles",
-        price: 38500,
-        image: "https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=700&q=80"
-    },
-
-    5: {
-        name: "Classic Diamond Necklace",
-        price: 72999,
-        image: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=700&q=80"
-    },
-
-    6: {
-        name: "Golden Charm Bracelet",
-        price: 19999,
-        image: "https://images.unsplash.com/photo-1619119069152-a2b331eb392a?auto=format&fit=crop&w=700&q=80"
-    },
-
-    7: {
-        name: "Royal Bridal Set",
-        price: 89999,
-        image: "https://images.unsplash.com/photo-1602173574767-37ac01994b2a?auto=format&fit=crop&w=700&q=80"
-    },
-
-    8: {
-        name: "Elegant Gold Ring",
-        price: 16999,
-        image: "https://images.unsplash.com/photo-1588444650733-df5e2d7b2e5a?auto=format&fit=crop&w=700&q=80"
-    }
-
-};
-
-let wishlist = [];
-let cart = [];
-
-
-/* WISHLIST */
-
-function toggleWishlist(id) {
-
-    if (wishlist.includes(id)) {
-        wishlist = wishlist.filter(item => item !== id);
-    } else {
-        wishlist.push(id);
-    }
-
-    updateWishlist();
-    updateHearts();
-}
-
-
-function updateWishlist() {
-
-    const container = document.getElementById("wishlistItems");
-
-    document.getElementById("wishlistCount").textContent = wishlist.length;
-
-    if (wishlist.length === 0) {
-        container.innerHTML = '<p class="empty">Your wishlist is empty.</p>';
-        return;
-    }
-
-    container.innerHTML = "";
-
-    wishlist.forEach(id => {
-
-        const product = products[id];
-
-        container.innerHTML += `
-            <div class="wishlist-item">
-
-                <img src="${product.image}">
-
-                <div>
-                    <h4>${product.name}</h4>
-                    <p>₹${product.price.toLocaleString("en-IN")}</p>
-
-                    <button onclick="addToCart(${id})">
-                        Add to Cart
-                    </button>
-
-                    <button onclick="toggleWishlist(${id})" class="remove">
-                        Remove
-                    </button>
-                </div>
-
-            </div>
-        `;
-    });
-}
-
-
-function updateHearts() {
-
-    document.querySelectorAll(".product-card").forEach(card => {
-
-        const button = card.querySelector(".heart");
-
-        const productName = card.dataset.name;
-
-        const id = Object.keys(products).find(
-            key => products[key].name === productName
-        );
-
-        if (wishlist.includes(Number(id))) {
-            button.classList.add("active");
-            button.innerHTML = "♥";
-        } else {
-            button.classList.remove("active");
-            button.innerHTML = "♡";
-        }
-
-    });
-
-}
-
-
-/* CART */
-
-function addToCart(id) {
-
-    const existing = cart.find(item => item.id === id);
-
-    if (existing) {
-        existing.quantity++;
-    } else {
-
-        cart.push({
-            id: id,
-            quantity: 1
-        });
-
-    }
-
-    updateCart();
-    openCart();
-}
-
-
-function increaseQuantity(id) {
-
-    const item = cart.find(item => item.id === id);
-
-    if (item) {
-        item.quantity++;
-    }
-
-    updateCart();
-}
-
-
-function decreaseQuantity(id) {
-
-    const item = cart.find(item => item.id === id);
-
-    if (item) {
-
-        item.quantity--;
-
-        if (item.quantity <= 0) {
-            cart = cart.filter(item => item.id !== id);
-        }
-
-    }
-
-    updateCart();
-}
-
-
-function removeFromCart(id) {
-
-    cart = cart.filter(item => item.id !== id);
-
-    updateCart();
-}
-
-
-function updateCart() {
-
-    const container = document.getElementById("cartItems");
-
-    document.getElementById("cartCount").textContent =
-        cart.reduce((sum, item) => sum + item.quantity, 0);
-
-    if (cart.length === 0) {
-
-        container.innerHTML =
-            '<p class="empty">Your cart is empty.</p>';
-
-        document.getElementById("cartTotal").textContent = "₹0";
-
-        return;
-    }
-
-    container.innerHTML = "";
-
-    let total = 0;
-
-    cart.forEach(item => {
-
-        const product = products[item.id];
-
-        const itemTotal = product.price * item.quantity;
-
-        total += itemTotal;
-
-        container.innerHTML += `
-
-            <div class="cart-item">
-
-                <img src="${product.image}">
-
-                <div class="cart-details">
-
-                    <h4>${product.name}</h4>
-
-                    <p>₹${product.price.toLocaleString("en-IN")}</p>
-
-                    <div class="quantity">
-
-                        <button onclick="decreaseQuantity(${item.id})">
-                            −
-                        </button>
-
-                        <span>${item.quantity}</span>
-
-                        <button onclick="increaseQuantity(${item.id})">
-                            +
-                        </button>
-
-                    </div>
-
-                    <button class="remove-cart"
-                            onclick="removeFromCart(${item.id})">
-                        Remove
-                    </button>
-
-                </div>
-
-            </div>
-        `;
-    });
-
-    document.getElementById("cartTotal").textContent =
-        "₹" + total.toLocaleString("en-IN");
-}
-
-
-/* PANELS */
-
-function openWishlist() {
-
-    document.getElementById("wishlistPanel")
-        .classList.add("open");
-
-    document.getElementById("overlay")
-        .classList.add("show");
-
-}
-
-
-function closeWishlist() {
-
-    document.getElementById("wishlistPanel")
-        .classList.remove("open");
-
-    document.getElementById("overlay")
-        .classList.remove("show");
-
-}
-
-
-function openCart() {
-
-    document.getElementById("cartPanel")
-        .classList.add("open");
-
-    document.getElementById("overlay")
-        .classList.add("show");
-
-}
-
-
-function closeCart() {
-
-    document.getElementById("cartPanel")
-        .classList.remove("open");
-
-    document.getElementById("overlay")
-        .classList.remove("show");
-
-}
-
-
-function closePanels() {
-
-    closeCart();
-    closeWishlist();
-
-}
-
-
-/* SEARCH */
-
-document.getElementById("searchInput")
-.addEventListener("input", function () {
-
-    const search = this.value.toLowerCase();
-
-    const cards = document.querySelectorAll(".product-card");
-
-    let found = false;
-
-    cards.forEach(card => {
-
-        const name = card.dataset.name.toLowerCase();
-        const category = card.dataset.category.toLowerCase();
-
-        if (
-            name.includes(search) ||
-            category.includes(search)
-        ) {
-
-            card.style.display = "block";
-            found = true;
-
-        } else {
-
-            card.style.display = "none";
-
-        }
-
-    });
-
-    document.getElementById("noProducts").style.display =
-        found ? "none" : "block";
-
-});
-
-
-/* CHECKOUT */
-
-function checkout() {
-
-    if (cart.length === 0) {
-
-        alert("Your cart is empty!");
-        return;
-
-    }
-
-    const checkoutProducts =
-        document.getElementById("checkoutProducts");
-
-    const checkoutTotal =
-        document.getElementById("checkoutTotal");
-
-    let total = 0;
-
-    checkoutProducts.innerHTML = "";
-
-    cart.forEach(item => {
-
-        const product = products[item.id];
-
-        const itemTotal =
-            product.price * item.quantity;
-
-        total += itemTotal;
-
-        checkoutProducts.innerHTML += `
-
-            <div class="checkout-product">
-
-                <img src="${product.image}">
-
-                <div>
-
-                    <h4>${product.name}</h4>
+                    <h3>Rings</h3>
 
                     <p>
-                        ${item.quantity} ×
-                        ₹${product.price.toLocaleString("en-IN")}
+                        Elegant rings crafted to mark life's
+                        most memorable moments.
                     </p>
+
+                    <a href="#shop">
+                        Explore →
+                    </a>
 
                 </div>
 
-                <strong>
-                    ₹${itemTotal.toLocaleString("en-IN")}
-                </strong>
+            </div>
+
+
+            <div class="collection-card">
+
+                <img src="https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=900&q=85">
+
+                <div class="collection-content">
+
+                    <h3>Necklaces</h3>
+
+                    <p>
+                        Timeless necklaces designed to
+                        elevate every occasion.
+                    </p>
+
+                    <a href="#shop">
+                        Explore →
+                    </a>
+
+                </div>
 
             </div>
 
-        `;
 
-    });
+            <div class="collection-card">
 
-    checkoutTotal.textContent =
-        "₹" + total.toLocaleString("en-IN");
+                <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=900&q=85">
 
-    document
-        .getElementById("checkoutOverlay")
-        .classList.add("show");
+                <div class="collection-content">
 
-}
-function closeCheckout() {
+                    <h3>Earrings</h3>
 
-    document
-        .getElementById("checkoutOverlay")
-        .classList.remove("show");
+                    <p>
+                        Delicate details with a touch
+                        of royal elegance.
+                    </p>
 
-}
+                    <a href="#shop">
+                        Explore →
+                    </a>
 
+                </div>
 
-function changePayment(method) {
-
-    const card =
-        document.getElementById("cardPayment");
-
-    const upi =
-        document.getElementById("upiPayment");
-
-    const cod =
-        document.getElementById("codPayment");
-
-    card.classList.add("hidden-payment");
-    upi.classList.add("hidden-payment");
-    cod.classList.add("hidden-payment");
-
-
-    if (method === "card") {
-
-        card.classList.remove("hidden-payment");
-
-    }
-
-    else if (method === "upi") {
-
-        upi.classList.remove("hidden-payment");
-
-    }
-
-    else if (method === "cod") {
-
-        cod.classList.remove("hidden-payment");
-
-    }
-
-}
-
-
-/* CARD NUMBER FORMAT */
-
-document
-    .getElementById("cardNumber")
-    .addEventListener("input", function () {
-
-        let value =
-            this.value
-            .replace(/\D/g, "")
-            .substring(0, 16);
-
-        value =
-            value.match(/.{1,4}/g)?.join(" ")
-            || "";
-
-        this.value = value;
-
-    });
-
-
-/* EXPIRY FORMAT */
-
-document
-    .getElementById("expiry")
-    .addEventListener("input", function () {
-
-        let value =
-            this.value.replace(/\D/g, "");
-
-        if (value.length >= 3) {
-
-            value =
-                value.substring(0, 2)
-                + "/"
-                + value.substring(2, 4);
-
-        }
-
-        this.value = value;
-
-    });
-
-
-/* PAYMENT SUBMIT */
-
-document
-    .getElementById("checkoutForm")
-    .addEventListener("submit", function (event) {
-
-        event.preventDefault();
-
-        const paymentMethod =
-            document.querySelector(
-                'input[name="paymentMethod"]:checked'
-            ).value;
-
-
-        if (paymentMethod === "card") {
-
-            if (
-                !document.getElementById("cardName").value ||
-                !document.getElementById("cardNumber").value ||
-                !document.getElementById("expiry").value ||
-                !document.getElementById("cvv").value
-            ) {
-
-                alert("Please enter all card details.");
-                return;
-
-            }
-
-        }
-
-
-        if (paymentMethod === "upi") {
-
-            if (
-                !document.getElementById("upiId").value
-            ) {
-
-                alert("Please enter your UPI ID.");
-                return;
-
-            }
-
-        }
-
-
-        alert(
-            "🎉 Order Placed Successfully!\n\n" +
-            "Thank you for shopping with Royal Jewels."
-        );
-
-
-        cart = [];
-
-        updateCart();
-
-        closeCheckout();
-
-        document
-            .getElementById("checkoutForm")
-            .reset();
-
-        changePayment("card");
-
-    });
-
-
-/* INITIAL LOAD */
-
-updateCart();
-updateWishlist();
-updateHearts();
-
-</script>
-<!-- CHECKOUT / PAYMENT MODAL -->
-
-<div class="checkout-overlay" id="checkoutOverlay">
-
-    <div class="checkout-modal">
-
-        <button class="checkout-close" onclick="closeCheckout()">×</button>
-
-        <p class="checkout-label">SECURE CHECKOUT</p>
-
-        <h2>Customer & Payment Details</h2>
-
-        <!-- ORDER SUMMARY -->
-        <div class="checkout-summary">
-
-            <h3>Order Summary</h3>
-
-            <div id="checkoutProducts"></div>
-
-            <div class="checkout-total-row">
-                <span>Total Amount</span>
-                <strong id="checkoutTotal">₹0</strong>
             </div>
 
         </div>
 
-        <!-- CUSTOMER DETAILS -->
+    </section>
 
-        <form id="checkoutForm">
 
-            <div class="checkout-field">
-                <label>Full Name</label>
-                <input
-                    type="text"
-                    id="customerName"
-                    placeholder="Enter your full name"
-                    required>
+    
+
+    <section class="section shop" id="shop">
+
+        <div class="section-title">
+
+            <div class="kicker">
+                The Collection
             </div>
 
-            <div class="checkout-field">
-                <label>Email Address</label>
-                <input
-                    type="email"
-                    id="customerEmail"
-                    placeholder="Enter your email"
-                    required>
-            </div>
+            <h2>
+                Featured Jewellery
+            </h2>
 
-            <div class="checkout-field">
-                <label>Mobile Number</label>
-                <input
-                    type="tel"
-                    id="customerPhone"
-                    placeholder="10-digit mobile number"
-                    maxlength="10"
-                    pattern="[0-9]{10}"
-                    required>
-            </div>
-
-            <div class="checkout-field">
-                <label>Delivery Address</label>
-                <textarea
-                    id="customerAddress"
-                    rows="3"
-                    placeholder="House/Flat, Street, City, State, PIN code"
-                    required></textarea>
-            </div>
+        </div>
 
 
-            <!-- PAYMENT -->
-
-            <div class="payment-section">
-
-                <h3>Payment Method</h3>
-
-                <div class="payment-options">
-
-                    <label class="payment-option">
-
-                        <input
-                            type="radio"
-                            name="paymentMethod"
-                            value="card"
-                            checked
-                            onchange="changePayment('card')">
-
-                        <span>💳 Card</span>
-
-                    </label>
+        <div class="products">
 
 
-                    <label class="payment-option">
+       
 
-                        <input
-                            type="radio"
-                            name="paymentMethod"
-                            value="upi"
-                            onchange="changePayment('upi')">
+            <div class="product">
 
-                        <span>📱 UPI</span>
+                <div class="product-image">
 
-                    </label>
+                    <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=900&q=85">
 
-
-                    <label class="payment-option">
-
-                        <input
-                            type="radio"
-                            name="paymentMethod"
-                            value="cod"
-                            onchange="changePayment('cod')">
-
-                        <span>💵 Cash on Delivery</span>
-
+                    <label for="wish1" class="heart-label heart1">
+                        <span>♡</span>
                     </label>
 
                 </div>
 
-            </div>
+                <div class="product-info">
 
-
-            <!-- CARD DETAILS -->
-
-            <div id="cardPayment">
-
-                <div class="checkout-field">
-
-                    <label>Name on Card</label>
-
-                    <input
-                        type="text"
-                        id="cardName"
-                        placeholder="Enter name on card">
-
-                </div>
-
-
-                <div class="checkout-field">
-
-                    <label>Card Number</label>
-
-                    <input
-                        type="text"
-                        id="cardNumber"
-                        placeholder="1234 5678 9012 3456"
-                        maxlength="19">
-
-                </div>
-
-
-                <div class="card-small-fields">
-
-                    <div class="checkout-field">
-
-                        <label>Expiry Date</label>
-
-                        <input
-                            type="text"
-                            id="expiry"
-                            placeholder="MM/YY"
-                            maxlength="5">
-
+                    <div class="product-category">
+                        Rings
                     </div>
 
+                    <h3>
+                        Classic Diamond Ring
+                    </h3>
 
-                    <div class="checkout-field">
-
-                        <label>CVV</label>
-
-                        <input
-                            type="password"
-                            id="cvv"
-                            placeholder="CVV"
-                            maxlength="4">
-
+                    <div class="price">
+                        ₹48,500
                     </div>
 
-                </div>
-
-            </div>
-
-
-            <!-- UPI -->
-
-            <div
-                id="upiPayment"
-                class="hidden-payment">
-
-                <div class="checkout-field">
-
-                    <label>UPI ID</label>
-
-                    <input
-                        type="text"
-                        id="upiId"
-                        placeholder="example@upi">
+                    <label for="cart1" class="cart-label cart1">
+                        Add to Cart
+                    </label>
 
                 </div>
 
             </div>
 
 
-            <!-- COD -->
 
-            <div
-                id="codPayment"
-                class="hidden-payment cod-message">
+            <div class="product">
+
+                <div class="product-image">
+
+                    <img src="https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=900&q=85">
+
+                    <label for="wish2" class="heart-label heart2">
+                        <span>♡</span>
+                    </label>
+
+                </div>
+
+                <div class="product-info">
+
+                    <div class="product-category">
+                        Necklaces
+                    </div>
+
+                    <h3>
+                        Gold Heritage Necklace
+                    </h3>
+
+                    <div class="price">
+                        ₹72,000
+                    </div>
+
+                    <label for="cart2" class="cart-label cart2">
+                        Add to Cart
+                    </label>
+
+                </div>
+
+            </div>
+
+
+      
+
+            <div class="product">
+
+                <div class="product-image">
+
+                    <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=900&q=85">
+
+                    <label for="wish3" class="heart-label heart3">
+                        <span>♡</span>
+                    </label>
+
+                </div>
+
+                <div class="product-info">
+
+                    <div class="product-category">
+                        Earrings
+                    </div>
+
+                    <h3>
+                        Royal Pearl Earrings
+                    </h3>
+
+                    <div class="price">
+                        ₹19,500
+                    </div>
+
+                    <label for="cart3" class="cart-label cart3">
+                        Add to Cart
+                    </label>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="product">
+
+                <div class="product-image">
+
+                    <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=900&q=85">
+
+                    <label for="wish4" class="heart-label heart4">
+                        <span>♡</span>
+                    </label>
+
+                </div>
+
+                <div class="product-info">
+
+                    <div class="product-category">
+                        Pendants
+                    </div>
+
+                    <h3>
+                        Rose Gold Pendant
+                    </h3>
+
+                    <div class="price">
+                        ₹32,500
+                    </div>
+
+                    <label for="cart4" class="cart-label cart4">
+                        Add to Cart
+                    </label>
+
+                </div>
+
+            </div>
+
+
+        
+            <div class="product">
+
+                <div class="product-image">
+
+                    <img src="https://images.unsplash.com/photo-1599643477877-530eb83abc8e?auto=format&fit=crop&w=900&q=85">
+
+                    <label for="wish5" class="heart-label heart5">
+                        <span>♡</span>
+                    </label>
+
+                </div>
+
+                <div class="product-info">
+
+                    <div class="product-category">
+                        Pendants
+                    </div>
+
+                    <h3>
+                        Diamond Drop Pendant
+                    </h3>
+
+                    <div class="price">
+                        ₹68,000
+                    </div>
+
+                    <label for="cart5" class="cart-label cart5">
+                        Add to Cart
+                    </label>
+
+                </div>
+
+            </div>
+
+
+    
+
+            <div class="product">
+
+                <div class="product-image">
+
+                    <img src="https://tse4.mm.bing.net/th/id/OIP.Yg81ToKxkNAu4bvL0gbyhgHaHa?r=0&pid=Api&h=220&P=0">
+
+                    <label for="wish6" class="heart-label heart6">
+                        <span>♡</span>
+                    </label>
+
+                </div>
+
+                <div class="product-info">
+
+                    <div class="product-category">
+                        Rings
+                    </div>
+
+                    <h3>
+                        Emerald Gold Ring
+                    </h3>
+
+                    <div class="price">
+                        ₹55,000
+                    </div>
+
+                    <label for="cart6" class="cart-label cart6">
+                        Add to Cart
+                    </label>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="product">
+
+                <div class="product-image">
+
+                    <img src="https://images.unsplash.com/photo-1619119069152-a2b331eb392a?auto=format&fit=crop&w=900&q=85">
+
+                    <label for="wish7" class="heart-label heart7">
+                        <span>♡</span>
+                    </label>
+
+                </div>
+
+                <div class="product-info">
+
+                    <div class="product-category">
+                        Bangles
+                    </div>
+
+                    <h3>
+                        Classic Gold Bangle
+                    </h3>
+
+                    <div class="price">
+                        ₹42,000
+                    </div>
+
+                    <label for="cart7" class="cart-label cart7">
+                        Add to Cart
+                    </label>
+
+                </div>
+
+            </div>
+
+
+            <div class="product">
+
+                <div class="product-image">
+
+                    <img src="https://images.unsplash.com/photo-1535632787350-4e68ef0ac584?auto=format&fit=crop&w=900&q=85">
+
+                    <label for="wish8" class="heart-label heart8">
+                        <span>♡</span>
+                    </label>
+
+                </div>
+
+                <div class="product-info">
+
+                    <div class="product-category">
+                        Earrings
+                    </div>
+
+                    <h3>
+                        Diamond Stud Earrings
+                    </h3>
+
+                    <div class="price">
+                        ₹36,500
+                    </div>
+
+                    <label for="cart8" class="cart-label cart8">
+                        Add to Cart
+                    </label>
+
+                </div>
+
+            </div>
+
+
+            
+
+            <div class="product">
+
+                <div class="product-image">
+
+                    <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=900&q=85">
+
+                    <label for="wish9" class="heart-label heart9">
+                        <span>♡</span>
+                    </label>
+
+                </div>
+
+                <div class="product-info">
+
+                    <div class="product-category">
+                        Bracelets
+                    </div>
+
+                    <h3>
+                        Elegant Gold Bracelet
+                    </h3>
+
+                    <div class="price">
+                        ₹39,500
+                    </div>
+
+                    <label for="cart9" class="cart-label cart9">
+                        Add to Cart
+                    </label>
+
+                </div>
+
+            </div>
+
+
+         
+
+            <div class="product">
+
+                <div class="product-image">
+
+                    <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=900&q=85">
+
+                    <label for="wish10" class="heart-label heart10">
+                        <span>♡</span>
+                    </label>
+
+                </div>
+
+                <div class="product-info">
+
+                    <div class="product-category">
+                        Pendants
+                    </div>
+
+                    <h3>
+                        Emerald Gold Pendant
+                    </h3>
+
+                    <div class="price">
+                        ₹46,000
+                    </div>
+
+                    <label for="cart10" class="cart-label cart10">
+                        Add to Cart
+                    </label>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <section class="section craft" id="craft">
+
+        <div class="craft-grid">
+
+            <div>
+
+                <div class="kicker">
+                    Our Craft
+                </div>
+
+                <h2>
+                    Made by hands.<br>
+                    Designed for generations.
+                </h2>
 
                 <p>
-                    💵 You can pay the amount when your jewellery
-                    is delivered to your address.
+                    Every Royal Jewels piece begins with an idea
+                    and is transformed by skilled artisans into
+                    a timeless expression of beauty.
+                </p>
+
+                <p>
+                    From selecting precious stones to the final
+                    polish, every detail receives careful attention.
+                </p>
+
+                <div class="craft-list">
+
+                    <div>✦ Handcrafted by skilled artisans</div>
+                    <div>✦ Certified precious stones</div>
+                    <div>✦ Premium quality gold</div>
+                    <div>✦ Lifetime care and service</div>
+
+                </div>
+
+            </div>
+
+
+            <img
+                src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=1000&q=85"
+                class="craft-image">
+
+        </div>
+
+    </section>
+
+
+
+    <section class="section bespoke" id="bespoke">
+
+        <div class="bespoke-box">
+
+            <div class="kicker">
+                Bespoke Jewellery
+            </div>
+
+            <h2>
+                Create something uniquely yours.
+            </h2>
+
+            <p>
+                Work with our designers to create a jewellery
+                piece that reflects your personality, memories
+                and individual style.
+            </p>
+
+            <a href="#customer" class="bespoke-btn">
+                Start Your Design
+            </a>
+
+        </div>
+
+    </section>
+
+
+ 
+
+    <section class="section customer" id="customer">
+
+        <div class="form-box">
+
+            <div class="form-title">
+
+                <div class="kicker">
+                    Secure Checkout
+                </div>
+
+                <h2>
+                    Customer Details
+                </h2>
+
+                <p>
+                    Please enter your details to complete your purchase.
                 </p>
 
             </div>
 
 
-            <button
-                type="submit"
-                class="pay-now-btn">
+            <form>
 
-                PAY NOW
+                <div class="form-grid">
 
-            </button>
 
-            <p class="secure-note">
-                🔒 Secure checkout. This is a demo payment system.
-            </p>
+                    <div class="form-group">
 
-        </form>
+                        <label>
+                            Full Name
+                        </label>
+
+                        <input
+                            type="text"
+                            placeholder="Enter your full name"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>
+                            Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            placeholder="Enter your email"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>
+                            Phone Number
+                        </label>
+
+                        <input
+                            type="tel"
+                            placeholder="+91 XXXXX XXXXX"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>
+                            City
+                        </label>
+
+                        <input
+                            type="text"
+                            placeholder="Enter your city"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-group full">
+
+                        <label>
+                            Delivery Address
+                        </label>
+
+                        <input
+                            type="text"
+                            placeholder="Enter your complete address"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>
+                            State
+                        </label>
+
+                        <select required>
+
+                            <option value="">
+                                Select State
+                            </option>
+
+                            <option>
+                                Andhra Pradesh
+                            </option>
+
+                            <option>
+                                Telangana
+                            </option>
+
+                            <option>
+                                Tamil Nadu
+                            </option>
+
+                            <option>
+                                Karnataka
+                            </option>
+
+                            <option>
+                                Kerala
+                            </option>
+
+                            <option>
+                                Maharashtra
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>
+                            Pincode
+                        </label>
+
+                        <input
+                            type="text"
+                            placeholder="Enter pincode"
+                            required>
+
+                    </div>
+
+                </div>
+
+
+               
+
+                <div class="payment-title">
+                    Payment Details
+                </div>
+
+
+                <div class="form-grid">
+
+
+                    <div class="form-group full">
+
+                        <label>
+                            Card Number
+                        </label>
+
+                        <input
+                            type="text"
+                            placeholder="1234 5678 9012 3456"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>
+                            Expiry Date
+                        </label>
+
+                        <input
+                            type="text"
+                            placeholder="MM/YY"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>
+                            CVV
+                        </label>
+
+                        <input
+                            type="password"
+                            placeholder="CVV"
+                            maxlength="4"
+                            required>
+
+                    </div>
+
+
+                </div>
+
+
+                <!-- PLACE ORDER -->
+
+                <label
+                    for="success"
+                    class="place-order">
+
+                    Place Order
+
+                </label>
+
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+
+    <section class="quote">
+
+        <blockquote>
+
+            “Jewellery should not simply complete an outfit.
+            It should become part of your story.”
+
+        </blockquote>
+
+    </section>
+
+
+   
+
+    <section class="section visit" id="visit">
+
+        <div class="visit-grid">
+
+            <div>
+
+                <div class="kicker">
+                    Visit the Atelier
+                </div>
+
+                <h2>
+                    Your next treasured piece awaits.
+                </h2>
+
+                <p>
+                    No. 14, Bazaar Street, Mylapore,
+                    Chennai 600004
+                </p>
+
+                <p>
+                    +91 44 2498 0000
+                </p>
+
+                <p>
+                    hello@royaljewels.in
+                </p>
+
+                <div class="hours">
+
+                    <div>
+                        <span>Monday – Saturday</span>
+                        <span>10:30 AM – 8:00 PM</span>
+                    </div>
+
+                    <div>
+                        <span>Sunday</span>
+                        <span>11:00 AM – 6:00 PM</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <img
+                src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=1000&q=85"
+                class="visit-image">
+
+        </div>
+
+    </section>
+
+
+
+    <footer>
+
+        <div class="footer-grid">
+
+            <div>
+
+                <div class="footer-brand">
+                    Royal Jewels
+                </div>
+
+                <p>
+                    Handcrafted gold and gemstone jewellery
+                    made with timeless elegance.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h4>Shop</h4>
+
+                <a href="#shop">Rings</a>
+                <a href="#shop">Necklaces</a>
+                <a href="#shop">Earrings</a>
+                <a href="#shop">Bangles</a>
+
+            </div>
+
+
+            <div>
+
+                <h4>Studio</h4>
+
+                <a href="#craft">Craftsmanship</a>
+                <a href="#bespoke">Bespoke</a>
+                <a href="#visit">Visit Us</a>
+
+            </div>
+
+
+            <div>
+
+                <h4>Follow</h4>
+
+                <a href="#">Instagram</a>
+                <a href="#">Pinterest</a>
+                <a href="#">Facebook</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <span>
+                © 2026 Royal Jewels
+            </span>
+
+            <span>
+                Crafted with care
+            </span>
+
+        </div>
+
+    </footer>
+
+</div>
+
+
+
+
+<section class="success-section">
+
+    <div class="success-box">
+
+        <div class="success-icon">
+            ✓
+        </div>
+
+        <div class="success-small">
+            Royal Jewels
+        </div>
+
+        <h1>
+            Order Placed Successfully!
+        </h1>
+
+        <p>
+            Thank you for choosing Royal Jewels.
+            Your beautiful jewellery is now on its way
+            to becoming part of your story.
+        </p>
+
+        <p class="success-message">
+            Thank you for shopping with us ✦
+        </p>
+
+        <a
+            href="#shop"
+            class="continue-shopping">
+
+            Continue Shopping →
+
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<div class="wishlist-drawer drawer">
+
+    <div class="drawer-head">
+
+        <h2>
+            ♡ Wishlist
+        </h2>
+
+        <label for="open-wish" class="close">
+            ×
+        </label>
+
+    </div>
+
+
+    <div class="drawer-body">
+
+
+        <p class="cart-empty">
+            Your wishlist is empty.
+        </p>
+
+
+        <div class="drawer-item wi1">
+
+            <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=300&q=80">
+
+            <div class="drawer-item-info">
+
+                <h4>Classic Diamond Ring</h4>
+
+                <div class="drawer-price">
+                    ₹48,500
+                </div>
+
+                <label for="wish1" class="remove">
+                    Remove
+                </label>
+
+            </div>
+
+        </div>
+
+
+        <div class="drawer-item wi2">
+
+            <img src="https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=300&q=80">
+
+            <div class="drawer-item-info">
+
+                <h4>Gold Heritage Necklace</h4>
+
+                <div class="drawer-price">
+                    ₹72,000
+                </div>
+
+                <label for="wish2" class="remove">
+                    Remove
+                </label>
+
+            </div>
+
+        </div>
+
+
+        <div class="drawer-item wi3">
+
+            <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=300&q=80">
+
+            <div class="drawer-item-info">
+
+                <h4>Royal Pearl Earrings</h4>
+
+                <div class="drawer-price">
+                    ₹19,500
+                </div>
+
+                <label for="wish3" class="remove">
+                    Remove
+                </label>
+
+            </div>
+
+        </div>
+
+
+        <div class="drawer-item wi4">
+
+            <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=300&q=80">
+
+            <div class="drawer-item-info">
+
+                <h4>Rose Gold Pendant</h4>
+
+                <div class="drawer-price">
+                    ₹32,500
+                </div>
+
+                <label for="wish4" class="remove">
+                    Remove
+                </label>
+
+            </div>
+
+        </div>
+
+
+        <div class="drawer-item wi5">
+
+            <img src="https://images.unsplash.com/photo-1599643477877-530eb83abc8e?auto=format&fit=crop&w=300&q=80">
+
+            <div class="drawer-item-info">
+
+                <h4>Diamond Drop Pendant</h4>
+
+                <div class="drawer-price">
+                    ₹68,000
+                </div>
+
+                <label for="wish5" class="remove">
+                    Remove
+                </label>
+
+            </div>
+
+        </div>
+
+
+        <div class="drawer-item wi6">
+
+            <img src="https://tse4.mm.bing.net/th/id/OIP.Yg81ToKxkNAu4bvL0gbyhgHaHa?r=0&pid=Api&h=220&P=0">
+
+            <div class="drawer-item-info">
+
+                <h4>Emerald Gold Ring</h4>
+
+                <div class="drawer-price">
+                    ₹55,000
+                </div>
+
+                <label for="wish6" class="remove">
+                    Remove
+                </label>
+
+            </div>
+
+        </div>
+
+
+        <div class="drawer-item wi7">
+
+            <img src="https://images.unsplash.com/photo-1619119069152-a2b331eb392a?auto=format&fit=crop&w=300&q=80">
+
+            <div class="drawer-item-info">
+
+                <h4>Classic Gold Bangle</h4>
+
+                <div class="drawer-price">
+                    ₹42,000
+                </div>
+
+                <label for="wish7" class="remove">
+                    Remove
+                </label>
+
+            </div>
+
+        </div>
+
+
+        <div class="drawer-item wi8">
+
+            <img src="https://images.unsplash.com/photo-1535632787350-4e68ef0ac584?auto=format&fit=crop&w=300&q=80">
+
+            <div class="drawer-item-info">
+
+                <h4>Diamond Stud Earrings</h4>
+
+                <div class="drawer-price">
+                    ₹36,500
+                </div>
+
+                <label for="wish8" class="remove">
+                    Remove
+                </label>
+
+            </div>
+
+        </div>
+
+
+        <div class="drawer-item wi9">
+
+            <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=300&q=80">
+
+            <div class="drawer-item-info">
+
+                <h4>Elegant Gold Bracelet</h4>
+
+                <div class="drawer-price">
+                    ₹39,500
+                </div>
+
+                <label for="wish9" class="remove">
+                    Remove
+                </label>
+
+            </div>
+
+        </div>
+
+
+        <div class="drawer-item wi10">
+
+            <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=300&q=80">
+
+            <div class="drawer-item-info">
+
+                <h4>Emerald Gold Pendant</h4>
+
+                <div class="drawer-price">
+                    ₹46,000
+                </div>
+
+                <label for="wish10" class="remove">
+                    Remove
+                </label>
+
+            </div>
+
+        </div>
 
     </div>
 
 </div>
+
+
+<div class="cart-drawer drawer">
+
+    <div class="drawer-head">
+
+        <h2>
+            🛒 Your Cart
+        </h2>
+
+        <label for="open-cart" class="close">
+            ×
+        </label>
+
+    </div>
+
+
+    <div class="drawer-body">
+
+
+        <p class="cart-empty">
+            Your cart is empty.
+        </p>
+
+
+        <div class="drawer-item ci1">
+
+            <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=300&q=80">
+
+            <div class="drawer-item-info">
+
+                <h4>Classic Diamond Ring</h4>
+
+                <div class="drawer-price">
+                    ₹48,500
+                </div>
+
+                <div>
+                    Quantity: 1
+                </div>
+
+                <label for="cart1" class="remove">
+                    Remove
+                </label>
+
+            </div>
+
+        </div>
+
+
+        <div class="drawer-item ci2">
+
+            <img src="https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=300&q=80">
+
+            <div class="drawer-item-info">
+
+                <h4>Gold Heritage Necklace</h4>
+
+                <div class="drawer-price">
+                    ₹72,000
+                </div>
+
+                <div>
+                    Quantity: 1
+                </div>
+
+                <label for="cart2" class="remove">
+                    Remove
+                </label>
+
+            </div>
+
+        </div>
+
+
+        <div class="drawer-item ci3">
+
+            <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=300&q=80">
+
+            <div class="drawer-item-info">
+
+                <h4>Royal Pearl Earrings</h4>
+
+                <div class="drawer-price">
+                    ₹19,500
+                </div>
+
+                <div>
+                    Quantity: 1
+                </div>
+
+                <label for="cart3" class="remove">
+                    Remove
+                </label>
+
+            </div>
+
+        </div>
+
+
+        <div class="drawer-item ci4">
+
+            <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=300&q=80">
+
+            <div class="drawer-item-info">
+
+                <h4>Rose Gold Pendant</h4>
+
+                <div class="drawer-price">
+                    ₹32,500
+                </div>
+
+                <div>
+                    Quantity: 1
+                </div>
+
+                <label for="cart4" class="remove">
+                    Remove
+                </label>
+
+            </div>
+
+        </div>
+
+
+        <div class="drawer-item ci5">
+
+            <img src="https://images.unsplash.com/photo-1599643477877-530eb83abc8e?auto=format&fit=crop&w=300&q=80">
+
+            <div class="drawer-item-info">
+
+                <h4>Diamond Drop Pendant</h4>
+
+                <div class="drawer-price">
+                    ₹68,000
+                </div>
+
+                <div>
+                    Quantity: 1
+                </div>
+
+                <label for="cart5" class="remove">
+                    Remove
+                </label>
+
+            </div>
+
+        </div>
+
+
+        <div class="drawer-item ci6">
+
+            <img src="https://tse4.mm.bing.net/th/id/OIP.Yg81ToKxkNAu4bvL0gbyhgHaHa?r=0&pid=Api&h=220&P=0">
+
+            <div class="drawer-item-info">
+
+                <h4>Emerald Gold Ring</h4>
+
+                <div class="drawer-price">
+                    ₹55,000
+                </div>
+
+                <div>
+                    Quantity: 1
+                </div>
+
+                <label for="cart6" class="remove">
+                    Remove
+                </label>
+
+            </div>
+
+        </div>
+
+
+        <div class="drawer-item ci7">
+
+            <img src="https://images.unsplash.com/photo-1619119069152-a2b331eb392a?auto=format&fit=crop&w=300&q=80">
+
+            <div class="drawer-item-info">
+
+                <h4>Classic Gold Bangle</h4>
+
+                <div class="drawer-price">
+                    ₹42,000
+                </div>
+
+                <div>
+                    Quantity: 1
+                </div>
+
+                <label for="cart7" class="remove">
+                    Remove
+                </label>
+
+            </div>
+
+        </div>
+
+
+        <div class="drawer-item ci8">
+
+            <img src="https://images.unsplash.com/photo-1535632787350-4e68ef0ac584?auto=format&fit=crop&w=300&q=80">
+
+            <div class="drawer-item-info">
+
+                <h4>Diamond Stud Earrings</h4>
+
+                <div class="drawer-price">
+                    ₹36,500
+                </div>
+
+                <div>
+                    Quantity: 1
+                </div>
+
+                <label for="cart8" class="remove">
+                    Remove
+                </label>
+
+            </div>
+
+        </div>
+
+
+        <div class="drawer-item ci9">
+
+            <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=300&q=80">
+
+            <div class="drawer-item-info">
+
+                <h4>Elegant Gold Bracelet</h4>
+
+                <div class="drawer-price">
+                    ₹39,500
+                </div>
+
+                <div>
+                    Quantity: 1
+                </div>
+
+                <label for="cart9" class="remove">
+                    Remove
+                </label>
+
+            </div>
+
+        </div>
+
+
+        <div class="drawer-item ci10">
+
+            <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=300&q=80">
+
+            <div class="drawer-item-info">
+
+                <h4>Emerald Gold Pendant</h4>
+
+                <div class="drawer-price">
+                    ₹46,000
+                </div>
+
+                <div>
+                    Quantity: 1
+                </div>
+
+                <label for="cart10" class="remove">
+                    Remove
+                </label>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="drawer-footer">
+
+        <a href="#customer" class="checkout">
+            Proceed to Checkout →
+        </a>
+
+    </div>
+
+</div>
+
+
+
+<label for="open-cart" class="drawer-bg"></label>
+<label for="open-wish" class="drawer-bg"></label>
 
 </body>
 </html>
